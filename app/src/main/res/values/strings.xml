@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Zachary_Fong_MyRuns5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_history_maps">HistoryMapsActivity</string>
+    <string name="title_activity_view_maps">ViewMapsActivity</string>
+</resources>
