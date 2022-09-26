@@ -1,4 +1,4 @@
-package com.cmpt362.zachary_fong_myruns
+package com.cmpt362.zachary_fong_fitnesstracker
 
 import android.content.Context
 import android.content.Intent
@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.SpinnerAdapter
-import com.cmpt362.zachary_fong_myruns.databinding.FragmentStartBinding
+import com.cmpt362.zachary_fong_fitnesstracker.databinding.FragmentStartBinding
 import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_start.*
 

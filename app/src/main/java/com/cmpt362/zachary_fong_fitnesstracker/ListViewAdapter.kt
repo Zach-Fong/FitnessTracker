@@ -1,4 +1,4 @@
-package com.cmpt362.zachary_fong_myruns
+package com.cmpt362.zachary_fong_fitnesstracker
 
 import android.app.Activity
 import android.content.Context

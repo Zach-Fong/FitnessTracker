@@ -1,4 +1,4 @@
-package com.cmpt362.zachary_fong_myruns
+package com.cmpt362.zachary_fong_fitnesstracker
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -122,14 +122,14 @@ class NotifyService: Service(), LocationListener, SensorEventListener {
             CHANNEL_ID
         )
 
-        notificationBuilder.setContentTitle("MyRuns5")
+        notificationBuilder.setContentTitle("Fitness Tracker")
         notificationBuilder.setContentText("Service is on")
         notificationBuilder.setSmallIcon(R.drawable.ic_baseline_location_on_24)
         notificationBuilder.setContentIntent(openAppIntent)
         notification = notificationBuilder.build()
 
         if(Build.VERSION.SDK_INT > 26){
-            val notificationChannel = NotificationChannel(CHANNEL_ID, "MyRuns5 channel", NotificationManager.IMPORTANCE_HIGH)
+            val notificationChannel = NotificationChannel(CHANNEL_ID, "fitnesstracker channel", NotificationManager.IMPORTANCE_HIGH)
             notificationManager.createNotificationChannel(notificationChannel)
         }
 

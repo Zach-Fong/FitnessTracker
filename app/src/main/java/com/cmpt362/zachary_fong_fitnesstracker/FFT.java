@@ -20,7 +20,7 @@
  *  See the file "COPYING" for the text of the license.
  */
 
-package com.cmpt362.zachary_fong_myruns;
+package com.cmpt362.zachary_fong_fitnesstracker;
 
 /**
  * Utility class to perform a fast fourier transform without allocating any

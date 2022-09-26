@@ -1,4 +1,4 @@
-package com.cmpt362.zachary_fong_myruns
+package com.cmpt362.zachary_fong_fitnesstracker
 
 import android.Manifest
 import android.app.Activity
@@ -19,6 +19,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
 import androidx.lifecycle.ViewModelProvider
+import com.cmpt362.zachary_fong_fitnesstracker.R
 import java.io.File
 
 
@@ -88,8 +89,8 @@ class ProfileActivity : AppCompatActivity() {
 //        val imgFile = File(getExternalFilesDir(null), imgFileName)
 //        val tmpImgFile = File(getExternalFilesDir(null), tmpImgFileName)
 //        //uri for image
-//        imgUri = FileProvider.getUriForFile(this, "com.cmpt362.zachary_fong_myruns", imgFile)
-//        tmpImgUri = FileProvider.getUriForFile(this, "com.cmpt362.zachary_fong_myruns", tmpImgFile)
+//        imgUri = FileProvider.getUriForFile(this, "com.cmpt362.zachary_fong_fitnesstracker", imgFile)
+//        tmpImgUri = FileProvider.getUriForFile(this, "com.cmpt362.zachary_fong_fitnesstracker", tmpImgFile)
 //        //updates image on picture taken
 //        myViewModel = ViewModelProvider(this).get(MyViewModel::class.java)
 //        myViewModel.userImg.observe(this){

@@ -1,4 +1,4 @@
-package com.cmpt362.zachary_fong_myruns
+package com.cmpt362.zachary_fong_fitnesstracker
 
 import android.content.Context
 import android.graphics.Color
@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import com.cmpt362.zachary_fong_myruns.databinding.ActivityMapsBinding
+import com.cmpt362.zachary_fong_fitnesstracker.databinding.ActivityMapsBinding
 import com.google.android.gms.maps.*
 
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
