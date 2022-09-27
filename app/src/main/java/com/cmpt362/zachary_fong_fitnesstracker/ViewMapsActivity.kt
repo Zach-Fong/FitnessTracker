@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
@@ -58,10 +59,18 @@ class ViewMapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         viewModel.getEntry(entryId).observe(this){
             latLng = it.latLng.split(",") as MutableList<String>
-            latLng.removeLast()
-            drawMap()
-            findViewById<TextView>(R.id.tv_type).setText("Type: " + it.activityType)
+
+            Log.d("ooooo", latLng.toString())
+            Log.d("ppppp", latLng.size.toString())
+            if(latLng.size > 1){
+                latLng.removeLast()
+                drawMap()
+            }
+            else
+                findViewById<TextView>(R.id.tv_errormsg).setText("Did not record location data\n   Please record for longer")
+
             findViewById<TextView>(R.id.tv_curSpeed).setText("Cur speed: N/A")
+            findViewById<TextView>(R.id.tv_type).setText("Type: " + it.activityType)
 
             if(units == 0 && it.units == 1){
                 var roundSpeed = ((it.avgSpeed/0.621371)*100.00).toInt()/100.00

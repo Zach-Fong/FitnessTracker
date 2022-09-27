@@ -89,4 +89,14 @@
         android:layout_marginEnd="27dp"
         android:text="Cancel" />
 
+    <TextView
+        android:id="@+id/tv_errormsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text=""
+        android:textSize="16dp" />
+
 </RelativeLayout>

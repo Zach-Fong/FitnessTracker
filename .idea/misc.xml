@@ -18,11 +18,12 @@
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.5885542168674699" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.5265625" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.23981481481481481" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.31866197183098594" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.4" />
         <entry key="app/src/main/res/layout/fragment_start.xml" value="0.5265625" />
         <entry key="app/src/main/res/layout/fragment_start2.xml" value="0.5265625" />
         <entry key="app/src/main/res/layout/fragment_startinput.xml" value="0.5255208333333333" />
         <entry key="app/src/main/res/layout/fragment_view_entry.xml" value="0.5265625" />
+        <entry key="app/src/main/res/xml/root_preferences.xml" value="0.5088541666666667" />
       </map>
     </option>
   </component>

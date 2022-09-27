@@ -31,11 +31,8 @@ class FragmentSettings : Fragment() {
 
 
         var privacySettingsView = view.checkbox_privacySettings
-        var unitPreferenceView = view.tv_unitPreference
-        var commentsView = view.tv_comments
         var privacySettings = false
         var unitPreference = -1
-        var comments = ""
         var sharedPref = requireActivity().getSharedPreferences("settings", Context.MODE_PRIVATE)
         var edit = sharedPref?.edit()
         if(sharedPref != null){
@@ -71,17 +68,8 @@ class FragmentSettings : Fragment() {
             Log.d("units", unitPreference.toString())
         }
 
-//        view.tv_comments.setOnClickListener(){
-//            val commentsDialog = MyDialog()
-//            val commentsBundle = Bundle()
-//            commentsBundle.putInt(MyDialog.DIALOG_KEY, MyDialog.COMMENTS_DIALOG)
-//            commentsBundle.putString("comments", comments)
-//            commentsDialog.arguments = commentsBundle
-//            commentsDialog.show(parentFragmentManager, "commentsDialog")
-//        }
-
         view.tv_webpage.setOnClickListener(){
-            val url = "https://www.sfu.ca/computing.html"
+            val url = "https://github.com/zach-Fong/"
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(url)
             startActivity(intent)

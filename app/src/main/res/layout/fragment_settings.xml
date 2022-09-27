@@ -4,19 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentSettings"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="20dp">
 
     <!-- TODO: Update blank fragment layout -->
     <Space
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:layout_weight="5" >
+        android:layout_weight="3.5" >
     </Space>
     <TextView
         android:id="@+id/tv_accountPreferences"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Account Preferences"
+        android:textSize="16dp"
         android:textStyle="bold"/>
     <Space
         android:layout_width="0dp"
@@ -36,17 +38,15 @@
         android:id="@+id/checkbox_privacySettings"
         android:textSize="16dp"
         android:textColor="@color/black"
-        android:text="Privacy Settings (posting your records anonymously)" />
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_weight="1" >
-    </Space>
+        android:text="Share Data"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"/>
     <TextView
         android:id="@+id/tv_additionalSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Additional Settings"
+        android:textSize="16dp"
         android:textStyle="bold" />
     <Space
         android:layout_width="0dp"
@@ -59,29 +59,18 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="16dp"
-        android:text="Unit Preference (select the units)" />
+        android:text="Unit Preference" />
     <Space
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_weight="1" >
     </Space>
     <TextView
-        android:id="@+id/tv_comments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16dp"
-        android:textColor="@color/black"
-        android:text="Comments (please enter your comments)" />
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_weight="2" >
-    </Space>
-    <TextView
         android:id="@+id/tv_misc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Misc."
+        android:textSize="16dp"
         android:textStyle="bold" />
     <Space
         android:layout_width="0dp"
@@ -94,7 +83,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textSize="16dp"
-        android:text="Webpage (https://www.sfu.ca/computing.html)" />
+        android:text="My Github" />
     <Space
         android:layout_width="0dp"
         android:layout_height="1dp"
