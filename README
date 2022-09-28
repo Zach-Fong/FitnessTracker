@@ -1,7 +1,10 @@
 The following project is an android application completed for CMPT 362.
-This app is a fitness tracker that allows users to record fitness activity either manually, with GPS, or automatically.
-The GPS entry uses the MAPS SDK to record location data and calculate values like distance travelled, average speed, and elavation gain.
-The automatic entry uses a Weka model to predict if users are standing, walking or running.
-All data is stored using Room.
-
+This app is a fitness tracker that allows users to record fitness activity.
 To use the app download the "Fitness Tracker.apk" file and run it on an android device or emulator.
+
+To record fitness, select a type: manual, GPS, or automatic.
+The manual entry allows users to manually enter fitness data.
+The GPS entry uses the MAPS SDK to record location data and calculate values like distance traveled, average speed, and elavation gain.
+The automatic entry uses a Weka model to predict if users are standing, walking or running.
+Users can then view their saved workouts in the history tab and can delete them. All data is stored using Room.
+Users can also change preferences like units (kilometers or miles), create a user profile, and more under the settings tab.
